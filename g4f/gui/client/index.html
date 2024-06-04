@@ -46,7 +46,7 @@
     </script>
     <script src="/static/js/highlight.min.js"></script>
     <script>window.conversation_id = "{{chat_id}}"</script>
-    <title>g4f - gui</title>
+    <title>Wansaw AI</title>
 </head>
 
 <body>
@@ -56,7 +56,7 @@
             <div class="top">
                 <button class="new_convo" onclick="new_conversation()">
                     <i class="fa-regular fa-plus"></i>
-                    <span>New Conversation</span>
+                    <span>New Chat</span>
                 </button>
             </div>
             <div class="bottom_buttons">
@@ -66,6 +66,7 @@
                     <span>Images Album</span>
                 </button>
                 -->
+                 <!--
                 <button onclick="open_settings();">
                     <i class="fa-solid fa-toolbox"></i>
                     <span>Open Settings</span>
@@ -83,6 +84,12 @@
                 <div class="info">
                     <i class="fa-solid fa-star"></i>
                     <span id="version_text" class="convo-title"></span>
+                </div>
+                 -->
+                <div class="info">
+                    <i class="fa-solid fa-toolbox"></i>
+                    <span class="convo-title">Support <a href="https://t.me/amigr8">@amjiddader</a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -238,7 +245,9 @@
                 </div>
                 <div class="field">
                     <select name="provider" id="provider">
-                        <option value="">Provider: Auto</option>
+                        <option value="">Provider: Beta</option>
+                        <option value="You">Wansaw</option>
+                      <!--  
                         <option value="Bing">Bing</option>
                         <option value="OpenaiChat">OpenAI ChatGPT</option>
                         <option value="Gemini">Gemini</option>
@@ -246,6 +255,7 @@
                         <option value="MetaAI">Meta AI</option>
                         <option value="You">You</option>
                         <option value="">----</option>
+                        -->
                     </select>
                 </div>
             </div>
