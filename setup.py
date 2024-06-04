@@ -103,7 +103,7 @@ setup(
     entry_points={
         'console_scripts': ['g4f=g4f.cli:main'],
     },
-    url='https://github.com/xtekky/gpt4free',  # Link to your GitHub repository
+    url='https://github.com/amjiddader/ai',  # Link to your GitHub repository
     project_urls={
         'Source Code': 'https://github.com/xtekky/gpt4free',  # GitHub link
         'Bug Tracker': 'https://github.com/xtekky/gpt4free/issues',  # Link to issue tracker
