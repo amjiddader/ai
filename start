@@ -1,1 +1,1 @@
-python -m g4f.cli gui -port 80 -debug
+python3 -m g4f.cli gui -port 80 -debug
