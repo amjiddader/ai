@@ -82,12 +82,12 @@ class Api:
                     if e.status_code == 403:
                         return JSONResponse(
                             status_code=HTTP_401_UNAUTHORIZED,
-                            content=jsonable_encoder({"detail": "G4F API key required"}),
+                            content=jsonable_encoder({"detail": "API key required"}),
                         )
                 if not secrets.compare_digest(AppConfig.g4f_api_key, user_g4f_api_key):
                     return JSONResponse(
                         status_code=HTTP_403_FORBIDDEN,
-                        content=jsonable_encoder({"detail": "Invalid G4F API key"}),
+                        content=jsonable_encoder({"detail": "Invalid API key"}),
                     )
             return await call_next(request)
 
@@ -112,7 +112,7 @@ class Api:
 
         @self.app.get("/v1")
         async def read_root_v1():
-            return HTMLResponse('g4f API: Go to '
+            return HTMLResponse('Ai API: Go to '
                                 '<a href="/v1/chat/completions">chat/completions</a> '
                                 'or <a href="/v1/models">models</a>.')
 
