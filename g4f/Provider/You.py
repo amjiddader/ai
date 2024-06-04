@@ -14,7 +14,7 @@ from .you.har_file import get_telemetry_ids
 from .. import debug
 
 class You(AsyncGeneratorProvider, ProviderModelMixin):
-    label = "You.com"
+    label = "Wansaw"
     url = "https://you.com"
     working = True
     supports_gpt_35_turbo = True
